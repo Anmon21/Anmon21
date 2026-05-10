@@ -1,7 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:07000f,30:1a003a,70:3b0764,100:7c3aed&height=240&section=header&text=ANMON&fontSize=100&fontColor=ffffff&fontAlignY=42&desc=FULL-STACK%20DEV%20%7C%20HEALTHCARE%20TECH%20%7C%20AI%20BUILDER&descAlignY=62&descSize=14&descColor=c4b5fd&animation=fadeIn&stroke=a855f7&strokeWidth=3" width="100%"/>
-
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:07000f,50:1a003a,100:3b0764&height=160&text=ANMON&fontSize=80&fontColor=a855f7&fontAlignY=55&desc=FULL-STACK%20DEV%20%7C%20HEALTHCARE%20TECH%20%7C%20AI%20BUILDER&descAlignY=78&descSize=13&descColor=c4b5fd&stroke=7c3aed&strokeWidth=2" width="100%"/>
 <br/>
 
 <a href="https://git.io/typing-svg">
