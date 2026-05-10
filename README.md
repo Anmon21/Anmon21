@@ -27,8 +27,6 @@
 
 - ▶ Core dev on **[AllMed](https://songdo.allmed.mn)** — clinic management SaaS used by hospitals across Mongolia
 - ▶ Building **Govi AI** — multi-tenant Facebook Messenger AI chatbot powered by Groq, sold to Mongolian businesses
-- ▶ Shipped **QPay payment integration** into production billing systems with full Swagger docs
-- ▶ Built analytics dashboards with **ApexCharts** + Mongolian localization
 - ▶ Bilingual product builder — **Mongolian 🇲🇳 + English 🇬🇧**
 
 ---
@@ -65,7 +63,7 @@
 
 **[ BACKEND & DATABASE ]**
 
-[![Backend](https://skillicons.dev/icons?i=nodejs,express,mongodb,postgres&theme=dark)](https://skillicons.dev)
+[![Backend](https://skillicons.dev/icons?i=nodejs,express,mongodb,lua,postgres&theme=dark)](https://skillicons.dev)
 
 **[ TOOLS ]**
 
