@@ -145,11 +145,9 @@
 
 <div align="center">
 
-[![Gmail](https://img.shields.io/badge/GMAIL-07000f?style=for-the-badge&logo=gmail&logoColor=a855f7&labelColor=07000f)](mailto:YOUR_EMAIL)
+[![Gmail](https://img.shields.io/badge/GMAIL-07000f?style=for-the-badge&logo=gmail&logoColor=a855f7&labelColor=07000f)](mailto:bilguun313131@gmail.com)
 &nbsp;
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-07000f?style=for-the-badge&logo=linkedin&logoColor=a855f7&labelColor=07000f)](https://linkedin.com/in/YOUR_LINKEDIN)
-&nbsp;
-[![AllMed](https://img.shields.io/badge/ALLMED_SAAS-07000f?style=for-the-badge&logo=heart&logoColor=a855f7&labelColor=07000f)](https://songdo.allmed.mn)
+[![AllMed](https://img.shields.io/badge/ALLMED_SAAS-07000f?style=for-the-badge&logo=heart&logoColor=a855f7&labelColor=07000f)](https://allcall.allmed.mn)
 
 </div>
 
