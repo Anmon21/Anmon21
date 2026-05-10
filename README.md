@@ -71,7 +71,7 @@ I'm a **full-stack developer** from **Ulaanbaatar, Mongolia** 🇲🇳 building 
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=midnight-purple&hide_border=true&include_all_commits=true&count_private=true&title_color=a855f7&icon_color=7c3aed&text_color=e9d5ff&bg_color=0d001a" height="170"/>
+<img src="https://github-readme-stats.vercel.app/api?username=Anmon21&show_icons=true&theme=midnight-purple&hide_border=true&include_all_commits=true&count_private=true&title_color=a855f7&icon_color=7c3aed&text_color=e9d5ff&bg_color=0d001a" height="170"/>
 &nbsp;
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=midnight-purple&hide_border=true&langs_count=8&title_color=a855f7&text_color=e9d5ff&bg_color=0d001a" height="170"/>
 
@@ -81,7 +81,7 @@ I'm a **full-stack developer** from **Ulaanbaatar, Mongolia** 🇲🇳 building 
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-contribution-grid-snake-dark.svg" alt="Snake animation"/>
+<img src="https://raw.githubusercontent.com/Anmon21/Anmon21/output/github-contribution-grid-snake-dark.svg" alt="Snake animation"/>
 
 </div>
 
