@@ -146,8 +146,9 @@
 [![Gmail](https://img.shields.io/badge/GMAIL-07000f?style=for-the-badge&logo=gmail&logoColor=a855f7&labelColor=07000f)](mailto:bilguun313131@gmail.com)
 &nbsp;
 [![AllMed](https://img.shields.io/badge/ALLMED_SAAS-07000f?style=for-the-badge&logo=heart&logoColor=a855f7&labelColor=07000f)](https://allcall.allmed.mn)
+&nbsp;
 [![Instagram](https://img.shields.io/badge/Instagram-07000f?style=for-the-badge&logo=instagram&logoColor=a855f7&labelColor=07000f)]
-
+(https://www.instagram.com/anmon578/)
 </div>
 
 ---
