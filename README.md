@@ -4,16 +4,16 @@
 <br/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=20&pause=1000&color=A855F7&center=true&vCenter=true&width=600&lines=Building+Nodus+%F0%9F%8F%A5+Healthcare+SaaS;Shipping+Govi+AI+%F0%9F%A4%96+for+Mongolian+SMBs;React+%2B+Node.js+%2B+Groq+API;Turning+ideas+into+real+products+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=20&pause=1000&color=ffffff&center=true&vCenter=true&width=600&lines=Building+Nodus+%F0%9F%8F%A5+Healthcare+SaaS;Shipping+Govi+AI+%F0%9F%A4%96+for+Mongolian+SMBs;React+%2B+Node.js+%2B+Groq+API;Turning+ideas+into+real+products+%F0%9F%9A%80" alt="Typing SVG" />
 </a>
 
 <br/><br/>
 
-![Profile Views](https://komarev.com/ghpvc/?username=Anmon21&color=7c3aed&style=for-the-badge&label=PROFILE+VIEWS)
+![Profile Views](https://komarev.com/ghpvc/?username=Anmon21&color=525252&style=for-the-badge&label=PROFILE+VIEWS)
 &nbsp;
-![GitHub followers](https://img.shields.io/github/followers/Anmon21?color=7c3aed&logo=github&style=for-the-badge&label=FOLLOWERS)
+![GitHub followers](https://img.shields.io/github/followers/Anmon21?color=525252&logo=github&style=for-the-badge&label=FOLLOWERS)
 &nbsp;
-![Location](https://img.shields.io/badge/📍-Ulaanbaatar%2C%20MN-7c3aed?style=for-the-badge)
+![Location](https://img.shields.io/badge/📍-Ulaanbaatar%2C%20MN-525252?style=for-the-badge)
 
 </div>
 
@@ -87,13 +87,13 @@
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Anmon21&show_icons=true&theme=midnight-purple&hide_border=true&include_all_commits=true&count_private=true&title_color=a855f7&icon_color=7c3aed&text_color=e9d5ff&bg_color=07000f&ring_color=7c3aed" height="165"/>
+<img src="https://github-readme-stats.vercel.app/api?username=Anmon21&show_icons=true&theme=dark&hide_border=true&include_all_commits=true&count_private=true&title_color=ffffff&icon_color=525252&text_color=f5f5f5&bg_color=000000&ring_color=525252" height="165"/>
 &nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anmon21&layout=compact&theme=midnight-purple&hide_border=true&langs_count=8&title_color=a855f7&text_color=e9d5ff&bg_color=07000f" height="165"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anmon21&layout=compact&theme=dark&hide_border=true&langs_count=8&title_color=ffffff&text_color=f5f5f5&bg_color=000000" height="165"/>
 
 <br/>
 
-<img src="https://streak-stats.demolab.com?user=Anmon21&theme=midnight-purple&hide_border=true&ring=a855f7&fire=c084fc&currStreakLabel=e9d5ff&background=07000f&dates=c4b5fd&stroke=3b0764&sideLabels=c4b5fd" width="495"/>
+<img src="https://streak-stats.demolab.com?user=Anmon21&theme=dark&hide_border=true&ring=ffffff&fire=d4d4d4&currStreakLabel=f5f5f5&background=000000&dates=a3a3a3&stroke=262626&sideLabels=a3a3a3" width="495"/>
 
 </div>
 
@@ -107,7 +107,7 @@
 
 <div align="center">
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Anmon21&bg_color=07000f&color=c084fc&line=7c3aed&point=a855f7&area=true&area_color=1a003a&hide_border=true&radius=4)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Anmon21&bg_color=000000&color=d4d4d4&line=525252&point=ffffff&area=true&area_color=171717&hide_border=true&radius=4)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 </div>
 
@@ -148,13 +148,13 @@
 ```
 <div align="center">
 
-[![Gmail](https://img.shields.io/badge/GMAIL-07000f?style=for-the-badge&logo=gmail&logoColor=a855f7&labelColor=07000f)](mailto:bilguun313131@gmail.com)
+[![Gmail](https://img.shields.io/badge/GMAIL-000000?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=000000)](mailto:bilguun313131@gmail.com)
 &nbsp;
-[![Nodus](https://img.shields.io/badge/NODUS_SAAS-07000f?style=for-the-badge&logo=heart&logoColor=a855f7&labelColor=07000f)](https://songdo.Nodus.mn)
+[![Nodus](https://img.shields.io/badge/NODUS_SAAS-000000?style=for-the-badge&logo=heart&logoColor=ffffff&labelColor=000000)](https://songdo.Nodus.mn)
 &nbsp;
-[![Live Page](https://img.shields.io/badge/LIVE_PAGE-07000f?style=for-the-badge&logo=githubpages&logoColor=a855f7&labelColor=07000f)](https://anmon21.github.io/Anmon21/)
+[![Live Page](https://img.shields.io/badge/LIVE_PAGE-000000?style=for-the-badge&logo=githubpages&logoColor=ffffff&labelColor=000000)](https://anmon21.github.io/Anmon21/)
 &nbsp;
-[![Instagram](https://img.shields.io/badge/Instagram-07000f?style=for-the-badge&logo=instagram&logoColor=a855f7&labelColor=07000f)](https://www.instagram.com/anmon578/)
+[![Instagram](https://img.shields.io/badge/Instagram-000000?style=for-the-badge&logo=instagram&logoColor=ffffff&labelColor=000000)](https://www.instagram.com/anmon578/)
 
 </div>
 
@@ -162,6 +162,6 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,50:3b0764,100:07000f&height=120&section=footer&text=%5B%20BUILDING%20MONGOLIA'S%20DIGITAL%20FUTURE%20%5D&fontSize=13&fontColor=6b21a8&fontAlignY=65&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffffff,50:525252,100:000000&height=120&section=footer&text=%5B%20BUILDING%20MONGOLIA'S%20DIGITAL%20FUTURE%20%5D&fontSize=13&fontColor=a3a3a3&fontAlignY=65&animation=fadeIn" width="100%"/>
 
 </div>
