@@ -9,61 +9,36 @@ const out = (name, svg) => writeFileSync(new URL(`../assets/${name}`, import.met
 
 // ---------- HERO ----------
 {
-  const W = 900, H = 280, r = rand(7);
-  const d = stagger(0.14, 0.3);
-  const letters = [...'ANMON'].map((c, i) =>
-    `<text x="${178 + i * 112}" y="150" class="L" style="animation-delay:${d(i)}s">${c}</text>`).join('');
-  const dust = Array.from({ length: 40 }, () => {
-    const x = (r() * W).toFixed(0), y = (r() * H).toFixed(0), s = (0.6 + r() * 1.4).toFixed(1);
-    const dur = (3 + r() * 5).toFixed(1), del = (r() * 6).toFixed(1);
-    return `<circle cx="${x}" cy="${y}" r="${s}" fill="#fff" opacity="0"><animate attributeName="opacity" values="0;.9;0" dur="${dur}s" begin="${del}s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;${((r() - .5) * 24).toFixed(0)} -18" dur="${dur}s" begin="${del}s" repeatCount="indefinite"/></circle>`;
-  }).join('');
-  const ticks = Array.from({ length: 61 }, (_, i) =>
-    `<line x1="${60 + i * 13}" y1="${H - 34}" x2="${60 + i * 13}" y2="${H - (i % 5 ? 30 : 24)}" stroke="#fff" stroke-opacity="${i % 5 ? .25 : .6}"/>`).join('');
-  const roles = ['FULL-STACK DEVELOPER', 'HEALTHCARE TECHNOLOGY', 'AI BUILDER'];
-  const roleEls = roles.map((t, i) =>
-    `<text x="450" y="205" text-anchor="middle" class="R" style="animation-delay:${i * 3}s">${t}</text>`).join('');
-  const corner = (x, y, sx, sy) => `<path d="M${x} ${y + sy * 22}V${y}H${x + sx * 22}" fill="none" stroke="#fff" stroke-width="1.5" stroke-dasharray="60" stroke-dashoffset="60"><animate attributeName="stroke-dashoffset" to="0" dur="1s" begin=".2s" fill="freeze"/></path>`;
-  out('hero.svg', `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="ANMON - Full-stack developer, healthcare technology, AI builder">
+  const W = 900, H = 260;
+  const SERIF = "Georgia,'Times New Roman',Times,serif";
+  // letter centres for "Anmon" at 120px, centred on x=450
+  const xs = [292.5, 370.5, 459.5, 547, 615.5];
+  const d = stagger(0.13, 0.4);
+  const letters = [...'Anmon'].map((c, i) =>
+    `<text x="${xs[i]}" y="152" class="L" style="animation-delay:${d(i)}s">${c}</text>`).join('');
+  out('hero.svg', `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Anmon - developer from Ulaanbaatar, building Nodus">
 <defs>
-  <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#fff" fill-opacity=".14"/></pattern>
-  <radialGradient id="vig" cx=".5" cy=".5" r=".7"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".95"/></radialGradient>
-  <radialGradient id="halo"><stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
-  <linearGradient id="beam" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".22"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-  <linearGradient id="shine" x1="0" x2="1"><stop offset="0" stop-color="#6b6b6b"/><stop offset=".5" stop-color="#fff"/><stop offset="1" stop-color="#6b6b6b"/>
-    <animate attributeName="x1" values="-1;1" dur="5s" repeatCount="indefinite"/><animate attributeName="x2" values="0;2" dur="5s" repeatCount="indefinite"/></linearGradient>
-  <clipPath id="c"><rect width="${W}" height="${H}" rx="6"/></clipPath>
+  <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="3"><animate attributeName="seed" values="3;7;11;5;9" dur=".6s" calcMode="discrete" repeatCount="indefinite"/></feTurbulence><feColorMatrix type="saturate" values="0"/></filter>
+  <clipPath id="band"><rect x="0" y="40" width="${W}" height="140"/></clipPath>
 </defs>
 <style>
-  .L{font:200 104px 'Helvetica Neue',Helvetica,Arial,sans-serif;fill:url(#shine);text-anchor:middle;opacity:0;animation:in 1.1s cubic-bezier(.2,.8,.2,1) forwards}
-  @keyframes in{from{opacity:0;transform:translateY(24px);filter:blur(14px)}to{opacity:1;transform:none;filter:blur(0)}}
-  .R{font:400 12px ${FONT};letter-spacing:9px;fill:#a3a3a3;opacity:0;animation:role 9s infinite}
-  @keyframes role{0%{opacity:0;letter-spacing:16px}5%,28%{opacity:1;letter-spacing:9px}33%,100%{opacity:0}}
-  .S{font:10px ${FONT};letter-spacing:3px;fill:#737373}
+  .L{font:400 124px ${SERIF};fill:#f5f5f5;text-anchor:middle;transform-box:fill-box;transform-origin:center;transform:translateY(150px);animation:rise 1.1s cubic-bezier(.16,.8,.2,1) forwards}
+  @keyframes rise{to{transform:translateY(0)}}
+  .T{font:400 11px ${FONT};letter-spacing:5px;fill:#a3a3a3;text-anchor:middle;opacity:0;animation:fade 1.2s ease 1.5s forwards}
+  .N{font:italic 15px ${SERIF};fill:#d4d4d4;text-anchor:middle;opacity:0;animation:fade 1.2s ease 2s forwards}
+  @keyframes fade{to{opacity:1}}
+  .ink{fill:none;stroke:#f5f5f5;stroke-linecap:round;stroke-dasharray:700;stroke-dashoffset:700;animation:draw 1.4s cubic-bezier(.4,0,.2,1) 1.1s forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
 </style>
-<g clip-path="url(#c)">
-  <rect width="${W}" height="${H}" fill="#000"/><rect width="${W}" height="${H}" fill="url(#dots)"/>
-  <circle cx="450" cy="130" r="200" fill="url(#halo)"><animate attributeName="r" values="170;230;170" dur="6s" repeatCount="indefinite"/></circle>
-  <g transform="translate(450 130)" fill="none" stroke="#fff">
-    <circle r="118" stroke-opacity=".18" stroke-dasharray="2 8"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="60s" repeatCount="indefinite"/></circle>
-    <circle r="168" stroke-opacity=".12"><animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="90s" repeatCount="indefinite"/></circle>
-    <circle r="168" stroke-opacity="0"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="14s" repeatCount="indefinite"/></circle>
-    <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="14s" repeatCount="indefinite"/><circle cx="168" r="3.5" fill="#fff" stroke="none"/><circle cx="168" r="9" stroke-opacity=".4"><animate attributeName="r" values="4;12;4" dur="2s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".6;0;.6" dur="2s" repeatCount="indefinite"/></circle></g>
-    <g><animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="22s" repeatCount="indefinite"/><circle cx="118" r="2.5" fill="#fff" stroke="none"/></g>
-  </g>
-  ${dust}
-  <rect width="${W}" height="${H}" fill="url(#vig)"/>
-  <rect x="-300" y="0" width="300" height="${H}" fill="url(#beam)" transform="skewX(-20)"><animate attributeName="x" values="-300;1200" dur="6s" repeatCount="indefinite"/></rect>
-  ${letters}
-  <line x1="450" y1="170" x2="450" y2="170" stroke="#fff" stroke-opacity=".6"><animate attributeName="x1" to="330" dur="1.2s" begin="1.2s" fill="freeze"/><animate attributeName="x2" to="570" dur="1.2s" begin="1.2s" fill="freeze"/></line>
-  ${roleEls}
-  <g>${ticks}<animate attributeName="opacity" values="0;1" dur="1.5s" begin="1s" fill="freeze"/></g>
-  <text x="34" y="42" class="S">ANMON21 / PORTFOLIO</text>
-  <text x="${W - 34}" y="42" text-anchor="end" class="S">47.9186° N, 106.9177° E</text>
-  <text x="34" y="${H - 44}" class="S">NOW BUILDING — NODUS<tspan><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/> _</tspan></text>
-  <text x="${W - 34}" y="${H - 44}" text-anchor="end" class="S">ULAANBAATAR, MN</text>
-  ${corner(14, 14, 1, 1)}${corner(W - 14, 14, -1, 1)}${corner(14, H - 14, 1, -1)}${corner(W - 14, H - 14, -1, -1)}
-</g>
+<rect width="${W}" height="${H}" fill="#050505"/>
+<g clip-path="url(#band)">${letters}</g>
+<path class="ink" stroke-width="2.2" d="M262 184 C 340 176, 470 190, 640 180"/>
+<path class="ink" stroke-width="1" style="animation-delay:1.5s" d="M300 191 C 400 187, 520 194, 600 189"/>
+<g class="T"><text x="450" y="30" class="T">FULL-STACK · HEALTHCARE · BUILDER</text></g>
+<text x="450" y="228" class="N">currently building Nodus</text>
+<circle cx="${450 - 99}" cy="223" r="3" fill="#fff" opacity="0"><animate attributeName="opacity" values="0;1;.25;1" dur="2s" begin="2.2s" repeatCount="indefinite"/></circle>
+<rect width="${W}" height="${H}" filter="url(#grain)" opacity=".09"/>
+<rect x="10.5" y="10.5" width="${W - 21}" height="${H - 21}" fill="none" stroke="#fff" stroke-opacity=".18"/>
 </svg>`);
 }
 
