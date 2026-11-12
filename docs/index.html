@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Anmon — Full-stack & Healthcare Tech</title>
+<style>
+  :root{--bg:#07000f;--card:#0d0019;--p:#a855f7;--p2:#7c3aed;--t:#e9d5ff;--m:#c4b5fd}
+  *{box-sizing:border-box;margin:0}
+  body{background:var(--bg);color:var(--t);font:16px/1.6 ui-monospace,Menlo,Consolas,monospace;overflow-x:hidden}
+  canvas{position:fixed;inset:0;z-index:0;pointer-events:none}
+  main{position:relative;z-index:1;max-width:960px;margin:auto;padding:0 20px 80px}
+  header{min-height:90vh;display:grid;place-content:center;text-align:center}
+  h1{font-size:clamp(3rem,14vw,8rem);font-weight:900;letter-spacing:.04em;background:linear-gradient(90deg,var(--p2),#fff,var(--p));-webkit-background-clip:text;background-clip:text;color:transparent}
+  h1 span{display:inline-block}
+  .role{color:var(--m);letter-spacing:.4em;font-size:.9rem;margin-top:8px;min-height:1.6em}
+  h2{color:var(--p);margin:80px 0 24px;font-size:1.1rem;letter-spacing:.2em}
+  .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .card{background:var(--card);border:1px solid #7c3aed99;border-radius:14px;padding:22px;will-change:transform}
+  .card h3{margin-bottom:6px}.card p{color:var(--m);font-size:.85rem}
+  .bar{height:4px;background:#1a003a;border-radius:2px;margin:16px 0 10px;overflow:hidden}
+  .bar i{display:block;height:100%;width:0;background:var(--p);border-radius:2px}
+  .tag{display:inline-block;font-size:.7rem;border:1px solid var(--p2);border-radius:99px;padding:1px 10px;margin:2px 2px 0 0;color:var(--m)}
+  .live{color:var(--p);font-size:.75rem;font-weight:700}
+  .live::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:currentColor;margin-right:8px}
+  .stack{display:flex;flex-wrap:wrap;gap:10px}
+  .stack b{font-weight:400;border:1px solid var(--p2);background:#1a003a;border-radius:99px;padding:6px 16px;cursor:default}
+  .count{font-size:2.4rem;font-weight:900;color:var(--p)}
+  a.btn{display:inline-block;margin:6px 8px 0 0;padding:10px 22px;border:1px solid var(--p2);border-radius:99px;color:var(--t);text-decoration:none}
+  a.btn:hover{background:var(--p2)}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas>
+<main>
+  <header>
+    <h1 id="name" aria-label="ANMON"></h1>
+    <div class="role" id="role"></div>
+  </header>
+
+  <h2>// NOW BUILDING</h2>
+  <div class="grid">
+    <div class="card" data-reveal><h3>🟣 Nodus</h3><p>Clinic management &amp; scheduling SaaS for Mongolian healthcare</p><div class="bar"><i data-w="92"></i></div><span class="tag">React</span><span class="tag">MUI</span><span class="tag">Node</span><span class="tag">MongoDB</span><br><br><span class="live">LIVE</span></div>
+    <div class="card" data-reveal><h3>⚡ Govi AI</h3><p>Multi-tenant AI chatbot for local businesses via FB Messenger</p><div class="bar"><i data-w="68"></i></div><span class="tag">Node</span><span class="tag">Express</span><span class="tag">Groq</span><br><br><span class="live">IN DEV</span></div>
+    <div class="card" data-reveal><h3>🏢 NatCX</h3><p>Contact center CRM &amp; consulting platform</p><div class="bar"><i data-w="100"></i></div><span class="tag">Next.js</span><span class="tag">TypeScript</span><br><br><span class="live">DEPLOYED</span></div>
+  </div>
+
+  <h2>// BY THE NUMBERS</h2>
+  <div class="grid">
+    <div class="card" data-reveal><div class="count" data-to="3">0</div><p>products shipped</p></div>
+    <div class="card" data-reveal><div class="count" data-to="2">0</div><p>languages: 🇲🇳 + 🇬🇧</p></div>
+    <div class="card" data-reveal><div class="count" data-to="13">0</div><p>technologies in the toolbox</p></div>
+  </div>
+
+  <h2>// STACK</h2>
+  <div class="stack" id="stack"></div>
+
+  <h2>// CONNECT</h2>
+  <a class="btn" href="https://github.com/Anmon21">GitHub</a>
+  <a class="btn" href="https://www.instagram.com/anmon578/">Instagram</a>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+<script type="module">
+import { animate, inView, hover, stagger } from "https://cdn.jsdelivr.net/npm/motion@11.11.13/+esm";
+
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* --- anime.js: hero letters, role typing, particle field --- */
+const name = document.getElementById("name");
+name.innerHTML = [..."ANMON"].map(c => `<span>${c}</span>`).join("");
+if (!reduce) {
+  anime({ targets: "#name span", translateY: [60, 0], scale: [.4, 1], rotate: [-12, 0], opacity: [0, 1],
+          delay: anime.stagger(110), duration: 900, easing: "easeOutElastic(1, .6)" });
+}
+
+const roles = ["FULL-STACK DEV", "HEALTHCARE TECH", "AI BUILDER", "NOW BUILDING NODUS"];
+const roleEl = document.getElementById("role");
+let ri = 0;
+(async function loop() {
+  const text = roles[ri++ % roles.length];
+  for (let i = 0; i <= text.length; i++) { roleEl.textContent = text.slice(0, i); await new Promise(r => setTimeout(r, reduce ? 0 : 55)); }
+  await new Promise(r => setTimeout(r, 1400));
+  for (let i = text.length; i >= 0; i--) { roleEl.textContent = text.slice(0, i); await new Promise(r => setTimeout(r, reduce ? 0 : 25)); }
+  loop();
+})();
+
+const cv = document.getElementById("bg"), cx = cv.getContext("2d");
+const pts = Array.from({ length: 60 }, () => ({ x: Math.random(), y: Math.random(), r: 1 + Math.random() * 2, vx: (Math.random() - .5) * .0004, vy: -.0002 - Math.random() * .0004 }));
+const mouse = { x: -1, y: -1 };
+addEventListener("pointermove", e => { mouse.x = e.clientX; mouse.y = e.clientY; });
+function resize() { cv.width = innerWidth; cv.height = innerHeight; }
+addEventListener("resize", resize); resize();
+(function frame() {
+  cx.clearRect(0, 0, cv.width, cv.height);
+  for (const p of pts) {
+    p.x += p.vx; p.y += p.vy; if (p.y < 0) { p.y = 1; p.x = Math.random(); }
+    const X = p.x * cv.width, Y = p.y * cv.height, d = Math.hypot(X - mouse.x, Y - mouse.y);
+    cx.fillStyle = d < 140 ? "#e9d5ff" : "#a855f7aa";
+    cx.beginPath(); cx.arc(X, Y, p.r * (d < 140 ? 2 : 1), 0, 7); cx.fill();
+  }
+  if (!reduce) requestAnimationFrame(frame);
+})();
+
+/* --- Motion: scroll reveals, bars, counters, hover --- */
+inView("[data-reveal]", el => {
+  animate(el, { opacity: [0, 1], transform: ["translateY(40px)", "none"] }, { duration: .7, easing: [.2, .9, .3, 1] });
+  const bar = el.querySelector(".bar i");
+  if (bar) animate(bar, { width: bar.dataset.w + "%" }, { duration: 1.4, delay: .3, easing: [.2, .8, .2, 1] });
+  const n = el.querySelector(".count");
+  if (n) animate(0, +n.dataset.to, { duration: 1.4, onUpdate: v => n.textContent = Math.round(v) });
+}, { margin: "0px 0px -80px 0px" });
+document.querySelectorAll("[data-reveal]").forEach(el => el.style.opacity = 0);
+
+const stack = ["React","Next.js","TypeScript","Node.js","Express","MongoDB","PostgreSQL","Tailwind","MUI","Groq API","Lua","Figma","Git"];
+const stackEl = document.getElementById("stack");
+stackEl.innerHTML = stack.map(s => `<b style="opacity:0">${s}</b>`).join("");
+inView(stackEl, () => animate("#stack b", { opacity: [0, 1], transform: ["scale(.6)", "none"] }, { delay: stagger(.05), duration: .5, easing: [.2, .9, .3, 1.4] }));
+
+hover(".card", el => { animate(el, { transform: "translateY(-6px) scale(1.02)", borderColor: "#c084fc" }, { duration: .25 });
+                      return () => animate(el, { transform: "none", borderColor: "#7c3aed99" }, { duration: .25 }); });
+hover(".stack b", el => { animate(el, { transform: "scale(1.12)" }, { type: "spring", stiffness: 400, damping: 12 });
+                          return () => animate(el, { transform: "none" }, { duration: .2 }); });
+</script>
+</body>
+</html>

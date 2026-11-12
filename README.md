@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:07000f,50:1a003a,100:3b0764&height=160&text=ANMON&fontSize=80&fontColor=a855f7&fontAlignY=55&desc=FULL-STACK%20DEV%20%7C%20HEALTHCARE%20TECH%20%7C%20AI%20BUILDER&descAlignY=78&descSize=13&descColor=c4b5fd&stroke=7c3aed&strokeWidth=2" width="100%"/>
+<img src="assets/hero.svg" alt="ANMON — Full-stack dev, healthcare tech, AI builder" width="100%"/>
 <br/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=20&pause=1000&color=A855F7&center=true&vCenter=true&width=600&lines=Building+AllMed+%F0%9F%8F%A5+Healthcare+SaaS;Shipping+Govi+AI+%F0%9F%A4%96+for+Mongolian+SMBs;React+%2B+Node.js+%2B+Groq+API;Turning+ideas+into+real+products+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=20&pause=1000&color=A855F7&center=true&vCenter=true&width=600&lines=Building+Nodus+%F0%9F%8F%A5+Healthcare+SaaS;Shipping+Govi+AI+%F0%9F%A4%96+for+Mongolian+SMBs;React+%2B+Node.js+%2B+Groq+API;Turning+ideas+into+real+products+%F0%9F%9A%80" alt="Typing SVG" />
 </a>
 
 <br/><br/>
@@ -14,6 +14,14 @@
 ![GitHub followers](https://img.shields.io/github/followers/Anmon21?color=7c3aed&logo=github&style=for-the-badge&label=FOLLOWERS)
 &nbsp;
 ![Location](https://img.shields.io/badge/📍-Ulaanbaatar%2C%20MN-7c3aed?style=for-the-badge)
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="assets/now.svg" alt="Currently working on Nodus" width="100%"/>
 
 </div>
 
@@ -39,11 +47,7 @@
 
 <div align="center">
 
-| 🟣 AllMed | ⚡ Govi AI | 🏢 NatCX |
-|:---:|:---:|:---:|
-| Clinic management & scheduling SaaS for Mongolian healthcare | Multi-tenant AI chatbot for local businesses via FB Messenger | Contact center CRM & consulting platform |
-| `React` `MUI` `Node.js` `MongoDB` | `Node.js` `Express` `Groq API` | `Next.js` `TypeScript` |
-| ![Live](https://img.shields.io/badge/●%20LIVE-7c3aed?style=flat-square) | ![Dev](https://img.shields.io/badge/⚡%20IN%20DEV-4c1d95?style=flat-square) | ![Deploy](https://img.shields.io/badge/✓%20DEPLOYED-3b0764?style=flat-square) |
+<img src="assets/projects.svg" alt="Projects: Nodus, Govi AI, NatCX" width="100%"/>
 
 </div>
 
@@ -56,6 +60,8 @@
 ```
 
 <div align="center">
+
+<img src="assets/marquee.svg" alt="Tech stack" width="100%"/>
 
 **[ FRONTEND ]**
 
@@ -144,11 +150,14 @@
 
 [![Gmail](https://img.shields.io/badge/GMAIL-07000f?style=for-the-badge&logo=gmail&logoColor=a855f7&labelColor=07000f)](mailto:bilguun313131@gmail.com)
 &nbsp;
-[![AllMed](https://img.shields.io/badge/ALLMED_SAAS-07000f?style=for-the-badge&logo=heart&logoColor=a855f7&labelColor=07000f)](https://allcall.allmed.mn)
+[![Nodus](https://img.shields.io/badge/NODUS_SAAS-07000f?style=for-the-badge&logo=heart&logoColor=a855f7&labelColor=07000f)](https://songdo.Nodus.mn)
+&nbsp;
+[![Live Page](https://img.shields.io/badge/LIVE_PAGE-07000f?style=for-the-badge&logo=githubpages&logoColor=a855f7&labelColor=07000f)](https://anmon21.github.io/Anmon21/)
 &nbsp;
 [![Instagram](https://img.shields.io/badge/Instagram-07000f?style=for-the-badge&logo=instagram&logoColor=a855f7&labelColor=07000f)](https://www.instagram.com/anmon578/)
 
 </div>
+
 ---
 
 <div align="center">

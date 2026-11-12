@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" role="img" aria-label="ANMON - Full-stack dev, healthcare tech, AI builder">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07000f"/><stop offset=".5" stop-color="#1a003a"/><stop offset="1" stop-color="#3b0764"/></linearGradient>
+  <linearGradient id="tx" x1="0" x2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset=".5" stop-color="#e9d5ff"/><stop offset="1" stop-color="#a855f7"/>
+    <animate attributeName="x1" values="-1;1" dur="4s" repeatCount="indefinite"/><animate attributeName="x2" values="0;2" dur="4s" repeatCount="indefinite"/></linearGradient>
+  <pattern id="g" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#7c3aed" stroke-opacity=".12"/></pattern>
+  <radialGradient id="glow"><stop offset="0" stop-color="#a855f7" stop-opacity=".35"/><stop offset="1" stop-color="#a855f7" stop-opacity="0"/></radialGradient>
+  <clipPath id="c"><rect width="900" height="240" rx="14"/></clipPath>
+</defs>
+<style>
+  .L{font:900 84px 'SF Mono','Fira Code',Menlo,Consolas,monospace;fill:url(#tx);opacity:0;transform-box:fill-box;transform-origin:center;animation:in .7s cubic-bezier(.2,.9,.3,1.3) forwards}
+  @keyframes in{from{opacity:0;transform:translateY(40px) scale(.6) rotate(-8deg)}to{opacity:1;transform:none}}
+  .R{font:600 15px 'SF Mono','Fira Code',Menlo,Consolas,monospace;letter-spacing:6px;fill:#c4b5fd;opacity:0;animation:role 9s infinite}
+  @keyframes role{0%{opacity:0;transform:translateY(8px)}4%,28%{opacity:1;transform:none}33%,100%{opacity:0}}
+  .S{font:12px 'SF Mono','Fira Code',Menlo,Consolas,monospace;fill:#7c3aed;opacity:.8}
+</style>
+<g clip-path="url(#c)">
+  <rect width="900" height="240" fill="url(#bg)"/><rect width="900" height="240" fill="url(#g)"/>
+  <circle cx="450" cy="110" r="220" fill="url(#glow)"><animate attributeName="r" values="180;240;180" dur="5s" repeatCount="indefinite"/></circle>
+  <circle cx="0" cy="250" r="2.2" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-7 -270" dur="11.1s" begin="2.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="11.1s" begin="2.1s" repeatCount="indefinite"/></circle><circle cx="177" cy="250" r="3.1" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-15 -270" dur="9.6s" begin="4.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="9.6s" begin="4.2s" repeatCount="indefinite"/></circle><circle cx="96" cy="250" r="2.8" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-15 -270" dur="12.3s" begin="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="12.3s" begin="3.6s" repeatCount="indefinite"/></circle><circle cx="223" cy="250" r="1.4" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;18 -270" dur="8.3s" begin="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="8.3s" begin="0.8s" repeatCount="indefinite"/></circle><circle cx="481" cy="250" r="2.9" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;2 -270" dur="11.2s" begin="0.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="11.2s" begin="0.6s" repeatCount="indefinite"/></circle><circle cx="118" cy="250" r="2.9" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-3 -270" dur="9.3s" begin="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="9.3s" begin="3.8s" repeatCount="indefinite"/></circle><circle cx="210" cy="250" r="1.0" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;25 -270" dur="6.2s" begin="7.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="6.2s" begin="7.9s" repeatCount="indefinite"/></circle><circle cx="707" cy="250" r="2.3" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-9 -270" dur="11.4s" begin="5.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="11.4s" begin="5.0s" repeatCount="indefinite"/></circle><circle cx="338" cy="250" r="1.6" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-8 -270" dur="8.5s" begin="5.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="8.5s" begin="5.1s" repeatCount="indefinite"/></circle><circle cx="48" cy="250" r="2.2" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-10 -270" dur="7.1s" begin="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="7.1s" begin="3.6s" repeatCount="indefinite"/></circle><circle cx="174" cy="250" r="1.1" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-25 -270" dur="12.9s" begin="4.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="12.9s" begin="4.4s" repeatCount="indefinite"/></circle><circle cx="894" cy="250" r="2.0" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;3 -270" dur="10.9s" begin="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="10.9s" begin="1.5s" repeatCount="indefinite"/></circle><circle cx="896" cy="250" r="1.4" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-4 -270" dur="10.8s" begin="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="10.8s" begin="3.2s" repeatCount="indefinite"/></circle><circle cx="672" cy="250" r="1.4" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-24 -270" dur="11.7s" begin="6.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="11.7s" begin="6.4s" repeatCount="indefinite"/></circle><circle cx="27" cy="250" r="1.3" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-15 -270" dur="10.5s" begin="3.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="10.5s" begin="3.0s" repeatCount="indefinite"/></circle><circle cx="456" cy="250" r="2.1" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-9 -270" dur="6.7s" begin="7.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="6.7s" begin="7.9s" repeatCount="indefinite"/></circle><circle cx="691" cy="250" r="1.6" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-2 -270" dur="10.7s" begin="7.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="10.7s" begin="7.3s" repeatCount="indefinite"/></circle><circle cx="397" cy="250" r="3.0" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-11 -270" dur="9.3s" begin="7.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="9.3s" begin="7.8s" repeatCount="indefinite"/></circle><circle cx="715" cy="250" r="2.9" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;20 -270" dur="11.2s" begin="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="11.2s" begin="4.5s" repeatCount="indefinite"/></circle><circle cx="478" cy="250" r="1.7" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-3 -270" dur="8.4s" begin="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="8.4s" begin="2.5s" repeatCount="indefinite"/></circle><circle cx="510" cy="250" r="2.4" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-3 -270" dur="6.4s" begin="3.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="6.4s" begin="3.9s" repeatCount="indefinite"/></circle><circle cx="9" cy="250" r="2.5" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;26 -270" dur="8.7s" begin="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="8.7s" begin="3.6s" repeatCount="indefinite"/></circle><circle cx="113" cy="250" r="1.9" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-15 -270" dur="8.0s" begin="3.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="8.0s" begin="3.3s" repeatCount="indefinite"/></circle><circle cx="329" cy="250" r="2.6" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-1 -270" dur="12.5s" begin="0.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="12.5s" begin="0.1s" repeatCount="indefinite"/></circle><circle cx="739" cy="250" r="2.2" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-22 -270" dur="6.9s" begin="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="6.9s" begin="3.2s" repeatCount="indefinite"/></circle><circle cx="731" cy="250" r="1.9" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-10 -270" dur="6.5s" begin="4.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="6.5s" begin="4.8s" repeatCount="indefinite"/></circle><circle cx="228" cy="250" r="1.9" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-18 -270" dur="8.2s" begin="4.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="8.2s" begin="4.9s" repeatCount="indefinite"/></circle><circle cx="256" cy="250" r="3.2" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;1 -270" dur="7.4s" begin="5.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="7.4s" begin="5.3s" repeatCount="indefinite"/></circle><circle cx="706" cy="250" r="1.3" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-12 -270" dur="8.5s" begin="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="8.5s" begin="1.8s" repeatCount="indefinite"/></circle><circle cx="151" cy="250" r="3.1" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;1 -270" dur="11.1s" begin="4.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="11.1s" begin="4.7s" repeatCount="indefinite"/></circle><circle cx="440" cy="250" r="1.8" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-5 -270" dur="8.1s" begin="3.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="8.1s" begin="3.1s" repeatCount="indefinite"/></circle><circle cx="386" cy="250" r="1.7" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;14 -270" dur="8.5s" begin="0.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="8.5s" begin="0.9s" repeatCount="indefinite"/></circle><circle cx="368" cy="250" r="1.0" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-18 -270" dur="8.5s" begin="4.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="8.5s" begin="4.3s" repeatCount="indefinite"/></circle><circle cx="783" cy="250" r="3.0" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-16 -270" dur="12.8s" begin="6.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="12.8s" begin="6.4s" repeatCount="indefinite"/></circle><circle cx="459" cy="250" r="1.4" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;29 -270" dur="12.1s" begin="6.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="12.1s" begin="6.5s" repeatCount="indefinite"/></circle><circle cx="310" cy="250" r="2.4" fill="#c084fc" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-23 -270" dur="10.7s" begin="7.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.9;0" dur="10.7s" begin="7.1s" repeatCount="indefinite"/></circle>
+  <rect width="900" height="2" fill="#a855f7" opacity=".5"><animate attributeName="y" values="-4;240" dur="5s" repeatCount="indefinite"/></rect>
+  <text x="290" y="128" class="L" style="animation-delay:0.20s">A</text><text x="356" y="128" class="L" style="animation-delay:0.32s">N</text><text x="422" y="128" class="L" style="animation-delay:0.44s">M</text><text x="488" y="128" class="L" style="animation-delay:0.56s">O</text><text x="554" y="128" class="L" style="animation-delay:0.68s">N</text><text x="450" y="176" text-anchor="middle" class="R" style="animation-delay:0s">FULL-STACK DEV</text><text x="450" y="176" text-anchor="middle" class="R" style="animation-delay:3s">HEALTHCARE TECH</text><text x="450" y="176" text-anchor="middle" class="R" style="animation-delay:6s">AI BUILDER</text>
+  <text x="24" y="30" class="S">// anmon21.dev</text><text x="876" y="30" text-anchor="end" class="S">ULAANBAATAR, MN</text>
+  <text x="450" y="218" text-anchor="middle" class="S">&gt; now building Nodus<tspan opacity="1"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>_</tspan></text>
+</g>
+<rect x="1" y="1" width="898" height="238" rx="14" fill="none" stroke="#7c3aed" stroke-width="2" stroke-dasharray="1800" stroke-dashoffset="1800"><animate attributeName="stroke-dashoffset" to="0" dur="2.4s" fill="freeze"/></rect>
+</svg>
