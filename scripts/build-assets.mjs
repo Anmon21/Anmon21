@@ -16,7 +16,7 @@ const out = (name, svg) => writeFileSync(new URL(`../assets/${name}`, import.met
   const d = stagger(0.13, 0.4);
   const letters = [...'Anmon'].map((c, i) =>
     `<text x="${xs[i]}" y="152" class="L" style="animation-delay:${d(i)}s">${c}</text>`).join('');
-  out('hero.svg', `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Anmon - developer from Ulaanbaatar, building Nodus">
+  out('hero.svg', `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Anmon - developer from Ulaanbaatar, building CUPOST at Premium Nexus">
 <defs>
   <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="3"><animate attributeName="seed" values="3;7;11;5;9" dur=".6s" calcMode="discrete" repeatCount="indefinite"/></feTurbulence><feColorMatrix type="saturate" values="0"/></filter>
   <clipPath id="band"><rect x="0" y="40" width="${W}" height="140"/></clipPath>
@@ -35,8 +35,8 @@ const out = (name, svg) => writeFileSync(new URL(`../assets/${name}`, import.met
 <path class="ink" stroke-width="2.2" d="M262 184 C 340 176, 470 190, 640 180"/>
 <path class="ink" stroke-width="1" style="animation-delay:1.5s" d="M300 191 C 400 187, 520 194, 600 189"/>
 <g class="T"><text x="450" y="30" class="T">FULL-STACK · HEALTHCARE · BUILDER</text></g>
-<text x="450" y="228" class="N">currently building Nodus</text>
-<circle cx="${450 - 99}" cy="223" r="3" fill="#fff" opacity="0"><animate attributeName="opacity" values="0;1;.25;1" dur="2s" begin="2.2s" repeatCount="indefinite"/></circle>
+<text x="450" y="228" class="N">currently building CUPOST at Premium Nexus</text>
+<circle cx="${450 - 170}" cy="223" r="3" fill="#fff" opacity="0"><animate attributeName="opacity" values="0;1;.25;1" dur="2s" begin="2.2s" repeatCount="indefinite"/></circle>
 <rect width="${W}" height="${H}" filter="url(#grain)" opacity=".09"/>
 <rect x="10.5" y="10.5" width="${W - 21}" height="${H - 21}" fill="none" stroke="#fff" stroke-opacity=".18"/>
 </svg>`);
@@ -46,8 +46,9 @@ const out = (name, svg) => writeFileSync(new URL(`../assets/${name}`, import.met
 {
   const lines = [
     ['$ whoami', '#ffffff'], ['anmon — full-stack dev @ Ulaanbaatar', '#f5f5f5'],
-    ['$ now --working-on', '#ffffff'], ['  ▸ Nodus    clinic management SaaS      [LIVE]', '#d4d4d4'],
+    ['$ now --working-on', '#ffffff'], ['  ▸ CUPOST   @ Premium Nexus             [NOW]', '#ffffff'],
     ['  ▸ Govi AI  Messenger chatbot (Groq)    [IN DEV]', '#d4d4d4'], ['  ▸ NatCX    contact-center CRM          [DEPLOYED]', '#d4d4d4'],
+    ['  ◂ Nodus    clinic management SaaS      [PAST WORK]', '#737373'],
     ['$ stack --current', '#ffffff'], ['  React · Next.js · Node · MongoDB · Groq', '#f5f5f5'],
   ];
   const d = stagger(0.7, 0.4);
@@ -57,12 +58,12 @@ const out = (name, svg) => writeFileSync(new URL(`../assets/${name}`, import.met
     <text x="28" y="${58 + i * 24}" fill="${c}" clip-path="url(#k${i})">${t.replace(/&/g, '&amp;')}</text></g>`;
   }).join('');
   const H = 58 + lines.length * 24 + 16;
-  out('now.svg', `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 ${H}" width="100%" role="img" aria-label="Currently working on Nodus, Govi AI and NatCX">
-<style>text{font:14px ${FONT}}.ln{opacity:0;animation:f .01s forwards}@keyframes f{to{opacity:1}}</style>
+  out('now.svg', `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 ${H}" width="100%" role="img" aria-label="Currently working on CUPOST at Premium Nexus; past work includes Nodus">
+<style>text{font:14px ${FONT};white-space:pre}.ln{opacity:0;animation:f .01s forwards}@keyframes f{to{opacity:1}}</style>
 <rect width="900" height="${H}" rx="12" fill="#0a0a0a" stroke="#525252" stroke-opacity=".6"/>
 <rect width="900" height="34" rx="12" fill="#171717"/><rect y="20" width="900" height="14" fill="#171717"/>
 <circle cx="22" cy="17" r="6" fill="#525252"/><circle cx="42" cy="17" r="6" fill="#737373"/><circle cx="62" cy="17" r="6" fill="#a3a3a3"/>
-<text x="450" y="22" text-anchor="middle" fill="#525252" font-size="12">anmon@nodus ~ </text>
+<text x="450" y="22" text-anchor="middle" fill="#525252" font-size="12">anmon@premium-nexus ~ </text>
 ${body}
 <rect x="28" y="${H - 28}" width="9" height="16" fill="#ffffff"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
 </svg>`);
@@ -71,27 +72,25 @@ ${body}
 // ---------- PROJECTS ----------
 {
   const cards = [
-    { n: 'Nodus', e: '◆', desc: ['Clinic management &amp; scheduling', 'SaaS for Mongolian healthcare'], tags: ['React', 'MUI', 'Node', 'MongoDB'], s: 'LIVE', c: '#ffffff', p: 92 },
-    { n: 'Govi AI', e: '▲', desc: ['Multi-tenant AI chatbot for local', 'businesses via FB Messenger'], tags: ['Node', 'Express', 'Groq'], s: 'IN DEV', c: '#a3a3a3', p: 68 },
-    { n: 'NatCX', e: '■', desc: ['Contact center CRM &amp;', 'consulting platform'], tags: ['Next.js', 'TypeScript'], s: 'DEPLOYED', c: '#737373', p: 100 },
+    { n: 'CUPOST', e: '◆', desc: ['Currently building this at', 'Premium Nexus'], tags: [], s: 'WORKING ON NOW', c: '#ffffff', now: true },
+    { n: 'Govi AI', e: '▲', desc: ['Multi-tenant AI chatbot for local', 'businesses via FB Messenger'], tags: ['Node', 'Express', 'Groq'], s: 'IN DEV', c: '#a3a3a3' },
+    { n: 'Nodus', e: '●', desc: ['Clinic management &amp; scheduling', 'SaaS for Mongolian healthcare'], tags: ['React', 'MUI', 'Node', 'MongoDB'], s: 'PAST WORK', c: '#737373' },
+    { n: 'NatCX', e: '■', desc: ['Contact center CRM &amp;', 'consulting platform'], tags: ['Next.js', 'TypeScript'], s: 'DEPLOYED', c: '#737373' },
   ];
-  const d = stagger(0.25, 0.1);
+  const d = stagger(0.22, 0.1);
   const g = cards.map((k, i) => {
-    const x = 10 + i * 296;
+    const x = 10 + (i % 2) * 450, y = 10 + Math.floor(i / 2) * 170;
     let tx = 20;
-    const tags = k.tags.map((t) => { const w = t.length * 7.4 + 16; const s = `<g transform="translate(${tx} 150)"><rect width="${w}" height="22" rx="11" fill="#171717" stroke="#525252" stroke-opacity=".6"/><text x="${w / 2}" y="15" text-anchor="middle" fill="#a3a3a3" font-size="11">${t}</text></g>`; tx += w + 6; return s; }).join('');
-    return `<g transform="translate(${x} 10)"><g class="card" style="animation-delay:${d(i)}s">
-  <rect class="box" width="280" height="210" rx="14" fill="#0a0a0a" stroke="${k.c}" stroke-opacity=".7"/>
-  <text x="20" y="44" font-size="22" font-weight="700" fill="#f5f5f5">${k.e} ${k.n}</text>
-  <text x="20" y="78" font-size="12" fill="#a3a3a3">${k.desc[0]}</text><text x="20" y="96" font-size="12" fill="#a3a3a3">${k.desc[1]}</text>
-  <text x="20" y="128" font-size="10" fill="#525252">PROGRESS</text><text x="260" y="128" text-anchor="end" font-size="10" fill="#d4d4d4">${k.p}%</text>
-  <rect x="20" y="134" width="240" height="4" rx="2" fill="#171717"/>
-  <rect x="20" y="134" width="0" height="4" rx="2" fill="${k.c}"><animate attributeName="width" to="${2.4 * k.p}" dur="1.4s" begin="${(+d(i) + .5).toFixed(2)}s" fill="freeze" calcMode="spline" keySplines=".2 .8 .2 1" keyTimes="0;1"/></rect>
+    const tags = k.tags.map((t) => { const w = t.length * 7.4 + 16; const o = `<g transform="translate(${tx} 100)"><rect width="${w}" height="22" rx="11" fill="#171717" stroke="#525252" stroke-opacity=".6"/><text x="${w / 2}" y="15" text-anchor="middle" fill="#a3a3a3" font-size="11">${t}</text></g>`; tx += w + 6; return o; }).join('');
+    return `<g transform="translate(${x} ${y})"><g class="card" style="animation-delay:${d(i)}s">
+  <rect width="430" height="160" rx="14" fill="${k.now ? '#141414' : '#0a0a0a'}" stroke="${k.c}" stroke-opacity="${k.now ? 1 : .5}"${k.now ? ' stroke-width="1.5"' : ''}/>
+  <text x="20" y="40" font-size="22" font-weight="700" fill="${k.now ? '#fff' : '#d4d4d4'}">${k.e} ${k.n}</text>
+  <text x="20" y="66" font-size="12" fill="#a3a3a3">${k.desc[0]}</text><text x="20" y="83" font-size="12" fill="#a3a3a3">${k.desc[1]}</text>
   ${tags}
-  <circle cx="26" cy="192" r="4" fill="${k.c}"><animate attributeName="r" values="3;6;3" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;.3;1" dur="1.6s" repeatCount="indefinite"/></circle>
-  <text x="38" y="196" font-size="11" font-weight="700" fill="${k.c}">${k.s}</text></g></g>`;
+  <circle cx="26" cy="142" r="4" fill="${k.c}">${k.now ? '<animate attributeName="r" values="3;6;3" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;.3;1" dur="1.6s" repeatCount="indefinite"/>' : ''}</circle>
+  <text x="38" y="146" font-size="11" font-weight="700" letter-spacing="2" fill="${k.c}">${k.s}</text></g></g>`;
   }).join('');
-  out('projects.svg', `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 230" width="100%" role="img" aria-label="Projects: Nodus, Govi AI, NatCX">
+  out('projects.svg', `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 350" width="100%" role="img" aria-label="Projects: CUPOST (current), Govi AI, Nodus (past work), NatCX">
 <style>text{font-family:${FONT}}.card{opacity:0;animation:up .8s cubic-bezier(.2,.9,.3,1.2) forwards}
 @keyframes up{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}</style>${g}</svg>`);
 }
@@ -131,7 +130,7 @@ ${body}
   <path class="tr" pathLength="2200" d="${dpath}" style="stroke-dasharray:2200 2200;stroke-dashoffset:2200;animation-name:sweep2"/>
 </g>
 <style>@keyframes sweep2{0%{stroke-dashoffset:2200}55%{stroke-dashoffset:0}100%{stroke-dashoffset:-2200}}</style>
-<text x="24" y="24">LIVE · CLINIC SYSTEMS</text>
+<text x="24" y="24">SHIPPED · CLINIC SYSTEMS</text>
 <text x="${W - 24}" y="24" text-anchor="end">NODUS</text>
 <text x="24" y="${H - 18}">BPM <tspan fill="#f5f5f5" style="fill:#f5f5f5">72</tspan></text>
 <text x="${W - 24}" y="${H - 18}" text-anchor="end">ULAANBAATAR → ALL OF MONGOLIA</text>

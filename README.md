@@ -4,7 +4,7 @@
 <br/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=20&pause=1000&color=ffffff&center=true&vCenter=true&width=600&lines=Building+Nodus+%F0%9F%8F%A5+Healthcare+SaaS;Shipping+Govi+AI+%F0%9F%A4%96+for+Mongolian+SMBs;React+%2B+Node.js+%2B+Groq+API;Turning+ideas+into+real+products+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=20&pause=1000&color=ffffff&center=true&vCenter=true&width=600&lines=Building+CUPOST+at+Premium+Nexus+%F0%9F%9A%80;Past+work:+Nodus+%F0%9F%8F%A5+Healthcare+SaaS;Shipping+Govi+AI+%F0%9F%A4%96+for+Mongolian+SMBs;React+%2B+Node.js+%2B+Groq+API;Turning+ideas+into+real+products+%F0%9F%9A%80" alt="Typing SVG" />
 </a>
 
 <br/><br/>
@@ -21,7 +21,7 @@
 
 <div align="center">
 
-<img src="assets/now.svg" alt="Currently working on Nodus" width="100%"/>
+<img src="assets/now.svg" alt="Currently working on CUPOST at Premium Nexus" width="100%"/>
 
 </div>
 
@@ -33,7 +33,8 @@
 ╚══════════════════════════════════════════════════════╝
 ```
 
-- ▶ Builds  **[Nodus](https://songdo.Nodus.mn)** — clinic management SaaS used by hospitals across Mongolia
+- ▶ Currently building **CUPOST** at **Premium Nexus**
+- ▶ Previously built **[Nodus](https://songdo.Nodus.mn)** — clinic management SaaS used by hospitals across Mongolia
 - ▶ Builds **Govi AI** — multi-tenant Facebook Messenger AI chatbot powered by Groq, sold to Mongolian businesses
 - ▶ Bilingual product builder — **Mongolian 🇲🇳 + English 🇬🇧**
 
@@ -47,7 +48,7 @@
 
 <div align="center">
 
-<img src="assets/projects.svg" alt="Projects: Nodus, Govi AI, NatCX" width="100%"/>
+<img src="assets/projects.svg" alt="Projects: CUPOST, Govi AI, Nodus, NatCX" width="100%"/>
 
 </div>
 
@@ -150,7 +151,7 @@
 
 [![Gmail](https://img.shields.io/badge/GMAIL-000000?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=000000)](mailto:bilguun313131@gmail.com)
 &nbsp;
-[![Nodus](https://img.shields.io/badge/NODUS_SAAS-000000?style=for-the-badge&logo=heart&logoColor=ffffff&labelColor=000000)](https://songdo.Nodus.mn)
+[![Nodus](https://img.shields.io/badge/NODUS_PAST_WORK-000000?style=for-the-badge&logo=heart&logoColor=ffffff&labelColor=000000)](https://songdo.Nodus.mn)
 &nbsp;
 [![Live Page](https://img.shields.io/badge/LIVE_PAGE-000000?style=for-the-badge&logo=githubpages&logoColor=ffffff&labelColor=000000)](https://anmon21.github.io/Anmon21/)
 &nbsp;

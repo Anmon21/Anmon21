@@ -16,7 +16,7 @@
   <path class="tr" pathLength="2200" d="M0 100L40 100 L55 92 L70 100 L82 100 L90 114 L100 42 L111 130 L120 100 L140 100 L156 86 L172 100 L180 100L220 100 L235 92 L250 100 L262 100 L270 114 L280 42 L291 130 L300 100 L320 100 L336 86 L352 100 L360 100L400 100 L415 92 L430 100 L442 100 L450 114 L460 42 L471 130 L480 100 L500 100 L516 86 L532 100 L540 100L580 100 L595 92 L610 100 L622 100 L630 114 L640 42 L651 130 L660 100 L680 100 L696 86 L712 100 L720 100L760 100 L775 92 L790 100 L802 100 L810 114 L820 42 L831 130 L840 100 L860 100 L876 86 L892 100 L900 100" style="stroke-dasharray:2200 2200;stroke-dashoffset:2200;animation-name:sweep2"/>
 </g>
 <style>@keyframes sweep2{0%{stroke-dashoffset:2200}55%{stroke-dashoffset:0}100%{stroke-dashoffset:-2200}}</style>
-<text x="24" y="24">LIVE · CLINIC SYSTEMS</text>
+<text x="24" y="24">SHIPPED · CLINIC SYSTEMS</text>
 <text x="876" y="24" text-anchor="end">NODUS</text>
 <text x="24" y="152">BPM <tspan fill="#f5f5f5" style="fill:#f5f5f5">72</tspan></text>
 <text x="876" y="152" text-anchor="end">ULAANBAATAR → ALL OF MONGOLIA</text>
