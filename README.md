@@ -115,13 +115,13 @@
 
 ```
 ╔══════════════════════════════════════════════════════╗
-║             // CONTRIBUTION SNAKE                    ║
+║                    // PULSE                          ║
 ╚══════════════════════════════════════════════════════╝
 ```
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Anmon21/Anmon21/output/github-contribution-grid-snake-dark.svg" alt="Snake animation"/>
+<img src="assets/pulse.svg" alt="Animated heartbeat line" width="100%"/>
 
 </div>
 

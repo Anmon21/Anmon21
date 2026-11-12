@@ -106,4 +106,37 @@ ${body}
 <style>text{font-family:${FONT}}</style>
 <g mask="url(#m)"><g><animateTransform attributeName="transform" type="translate" from="0 0" to="-${x} 0" dur="28s" repeatCount="indefinite"/>${pills}<g transform="translate(${x} 0)">${pills}</g></g></g></svg>`);
 }
+// ---------- PULSE (ECG) ----------
+{
+  const W = 900, H = 170, mid = 100;
+  // one heartbeat cycle, 180px wide, repeated across the width
+  const beat = (x) => `L${x + 40} ${mid} L${x + 55} ${mid - 8} L${x + 70} ${mid} L${x + 82} ${mid} L${x + 90} ${mid + 14} L${x + 100} ${mid - 58} L${x + 111} ${mid + 30} L${x + 120} ${mid} L${x + 140} ${mid} L${x + 156} ${mid - 14} L${x + 172} ${mid} L${x + 180} ${mid}`;
+  let dpath = `M0 ${mid}`;
+  for (let x = 0; x < W; x += 180) dpath += beat(x);
+  out('pulse.svg', `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Heartbeat line - healthcare tech">
+<defs>
+  <pattern id="gr" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#fff" stroke-opacity=".06"/></pattern>
+  <linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#000"/><stop offset=".1" stop-color="#fff"/><stop offset=".9" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient>
+  <mask id="mk"><rect width="${W}" height="${H}" fill="url(#fade)"/></mask>
+</defs>
+<style>
+  text{font-family:${FONT};letter-spacing:3px;font-size:10px;fill:#737373}
+  .tr{fill:none;stroke:#fff;stroke-width:1.8;stroke-linejoin:round;stroke-dasharray:1100 1100;stroke-dashoffset:1100;animation:sweep 4.5s linear infinite}
+  .gh{fill:none;stroke:#fff;stroke-opacity:.12;stroke-width:1.8}
+  @keyframes sweep{0%{stroke-dashoffset:1100}60%{stroke-dashoffset:0}100%{stroke-dashoffset:-1100}}
+</style>
+<rect width="${W}" height="${H}" fill="#050505"/><rect width="${W}" height="${H}" fill="url(#gr)"/>
+<g mask="url(#mk)">
+  <path class="gh" d="${dpath}"/>
+  <path class="tr" pathLength="2200" d="${dpath}" style="stroke-dasharray:2200 2200;stroke-dashoffset:2200;animation-name:sweep2"/>
+</g>
+<style>@keyframes sweep2{0%{stroke-dashoffset:2200}55%{stroke-dashoffset:0}100%{stroke-dashoffset:-2200}}</style>
+<text x="24" y="24">LIVE · CLINIC SYSTEMS</text>
+<text x="${W - 24}" y="24" text-anchor="end">NODUS</text>
+<text x="24" y="${H - 18}">BPM <tspan fill="#f5f5f5" style="fill:#f5f5f5">72</tspan></text>
+<text x="${W - 24}" y="${H - 18}" text-anchor="end">ULAANBAATAR → ALL OF MONGOLIA</text>
+<rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" fill="none" stroke="#fff" stroke-opacity=".15"/>
+</svg>`);
+}
+
 console.log('assets built');
