@@ -17,7 +17,7 @@
 <path class="ink" stroke-width="2.2" d="M262 184 C 340 176, 470 190, 640 180"/>
 <path class="ink" stroke-width="1" style="animation-delay:1.5s" d="M300 191 C 400 187, 520 194, 600 189"/>
 <g class="T"><text x="450" y="30" class="T">FULL-STACK · HEALTHCARE · BUILDER</text></g>
-<text x="450" y="228" class="N">currently building Nodus</text>
+<text x="450" y="228" class="N">currently building CUPOST</text>
 <circle cx="351" cy="223" r="3" fill="#fff" opacity="0"><animate attributeName="opacity" values="0;1;.25;1" dur="2s" begin="2.2s" repeatCount="indefinite"/></circle>
 <rect width="900" height="260" filter="url(#grain)" opacity=".09"/>
 <rect x="10.5" y="10.5" width="879" height="239" fill="none" stroke="#fff" stroke-opacity=".18"/>
